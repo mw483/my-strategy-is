@@ -8,13 +8,31 @@
 <style>
     .text {
         font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-        font-weight: 900;
+        font-weight: 800;
         color: #dc202c;
-        font-size: 50px;
+        font-size: 100px;
         margin: 0;
-        font-stretch: 180%;
-        height: 50px;
+        height: 82px;
+        transform: scale(1, 0.82);
+        letter-spacing: -1.8px;
     }
+    .text-2 {
+        font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+        font-weight: 800;
+        color: #dc202c;
+        font-size: 100px;
+        margin: 0;
+        height: 82px;
+        transform: scale(1, 0.82);
+        letter-spacing: -2.5px;
+    }
+
+    .underscore {
+        font-weight: 250;
+        transform: translate(22px,-3px);
+        position: absolute;
+    }
+    
     .container {
         display: flex;
         flex-direction: column;
@@ -24,7 +42,7 @@
     <div class="container">
         <p class="text">MY</p>
         <p class="text">STRATEGY</p>
-        <p class="text">IS _________</p>
+        <p class="text-2">IS <span class="underscore">________</span></p>
     </div>
     
 </body>
